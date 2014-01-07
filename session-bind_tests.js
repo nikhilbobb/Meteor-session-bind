@@ -1,6 +1,6 @@
 if (Meteor.isClient) {
   sessionBind(Template.hello);
-  //create a simple helper to get session key and objects
+  //create a simple helper to get the session key and objects
   Template.hello.helpers({
     sessionGet: function(key, object) {
       if (object.hash != undefined) {
