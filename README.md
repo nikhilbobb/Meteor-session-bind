@@ -8,7 +8,7 @@ Two way data bindings between Meteor session variables and handlebars template h
 ```
 mrt add session-bind 
 ```
-*Requires ```Meteorite```. Get it at [atmosphere.meteor.com](https://atmosphere.meteor.com)*
+*Requires [Meteorite](https://github.com/oortcloud/meteorite)*
 
 ## Basic Usage
 In your javascript just add the following to the target template:
@@ -25,6 +25,10 @@ The helper generates an id and keeps the value up to date, so you should not set
 ```js
 Session.set("seshVar", "default text")
 ```
+
+The helper has been tested with input tags (range, text, checkbox, and number), as well as select and textarea tags. It does not work with radio buttons as of right now (file an issue if that is something you need). 
+
+See examples in the test file [here](https://github.com/nikhilbobb/Meteor-session-bind/blob/master/session-bind_tests.html).
 
 ## Advanced Usage
 
