@@ -6,7 +6,7 @@ Two way data bindings between Meteor session variables and handlebars template h
 #### Install
 
 ```
-mrt add handlebar-bind
+mrt add session-bind 
 ```
 *Requires ```Meteorite```. Get it at [atmosphere.meteor.com](https://atmosphere.meteor.com)*
 
