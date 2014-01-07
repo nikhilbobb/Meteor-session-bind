@@ -8,7 +8,7 @@ Two way data bindings between Meteor session variables and handlebars template h
 ```
 mrt add handlebar-bind
 ```
-*Requires ```Meteorite``` get it at [atmosphere.meteor.com](https://atmosphere.meteor.com)*
+*Requires ```Meteorite```. Get it at [atmosphere.meteor.com](https://atmosphere.meteor.com)*
 
 ## Basic Usage
 In your javascript just add the following to the target template:
@@ -16,26 +16,26 @@ In your javascript just add the following to the target template:
 sessionBind(Template.hello);
 ```
 
-And then in your html to bind a form element to the session variable seshVar:
-```html
+And then in your handlebars template to bind a form element to the session variable ```seshVar```:
+```handlebars
 <input type="text" {{bindSession "seshVar"}}>
 ```
 
-The helper generates an id and keeps the value up to date, so you should not set either. To set a default value on the input just do:
+The helper generates an id and keeps the value up to date, so you should not set either on your element. To set a default value on the input just do the following before template rendering:
 ```js
 Session.set("seshVar", "default text")
 ```
 
 ## Advanced Usage
 
-If you want to keep your session namespace clean then you can bind to a session object instead of variable:
-```html
+If you want to keep your session namespace clean then you can bind to a session object instead of a variable:
+```handlebars
 <input type="text" {{bindSession "seshVar" "seshObj"}}>
 ```
 Then to get back the var:
 ```js
 var obj = Session.get("seshObj");
-console.log(obj.seshVar);
+obj.seshVar; //is your variable
 ```
 This is especially useful when you have multiple forms, as you can come up with an object per form.
 
@@ -45,4 +45,4 @@ This is early software. Feel free to file an [issue](https://github.com/nikhilbo
 
 ##Credits
 
-Inspired by and docs (partially) copied from [Meteor-handlebar-bind](https://github.com/raix/Meteor-handlebar-bind)
+Inspired by [Meteor-handlebar-bind](https://github.com/raix/Meteor-handlebar-bind)
