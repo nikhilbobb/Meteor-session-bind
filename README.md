@@ -26,7 +26,7 @@ The helper generates an id and keeps the value up to date, so you should not set
 Session.set("seshVar", "default text")
 ```
 
-The helper has been tested with input tags (range, text, checkbox, and number), as well as select and textarea tags. It does not work with radio buttons as of right now (file an issue if that is something you need). 
+The helper has been tested with input tags (range, text, checkbox, and number), as well as select and textarea tags. It does not work with radio buttons (file an issue if that is something you need). 
 
 See examples in the test file [here](https://github.com/nikhilbobb/Meteor-session-bind/blob/master/session-bind_tests.html).
 
