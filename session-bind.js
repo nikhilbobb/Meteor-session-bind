@@ -22,9 +22,11 @@ sessionBind = function(template) {
 	}
       }
       //create an id to use for the event
-      var outStr = 'id=_sessionBind_' + name;
+      var outObj = {};
+      outObj["id"] = '_sessionBind_' + name;
       if (value != undefined) {
-	outStr += ' value=' + value;}
+        outObj["value"] = value;
+      }
       var eventMap = {};
       //since there are two events, throttle to 10ms to make sure
       //only gets executed once
@@ -46,7 +48,7 @@ sessionBind = function(template) {
       eventMap["input #_sessionBind_" + name] = primeEvent;
       eventMap["change #_sessionBind_" + name] = primeEvent;
       template.events(eventMap);
-      return outStr;
+      return outObj;
     }
   });
 }

@@ -1,24 +1,26 @@
 <template name="hello">
-<h1 id="rangeTest">{{sessionGet "range" "form"}}</h1>
-<input class="rangeTest" type="range" {{bindSession "range" "form"}}>
+<div style="display:none">
+  <h1 id="rangeTest">{{sessionGet "range" "form"}}</h1>
+  <input class="rangeTest" type="range" {{bindSession "range" "form"}}>
 
-<h1 id="textTest">{{sessionGet "text"}}</h1>
-<input class="textTest" type="text" {{bindSession "text"}}>
+  <h1 id="textTest">{{sessionGet "text"}}</h1>
+  <input class="textTest" type="text" {{bindSession "text"}}>
 
-<h1 id="textareaTest">{{sessionGet "textarea"}}</h1>
-<textarea class="textareaTest" {{bindSession "textarea"}}/>
-  
-<h1 id="checkboxTest">{{sessionGet "checkbox"}}</h1>
-<input class="checkboxTest" type="checkbox" {{bindSession "checkbox"}} >
+  <h1 id="textareaTest">{{sessionGet "textarea"}}</h1>
+  <textarea class="textareaTest" {{bindSession "textarea"}}></textarea>
 
-<h1 id="numberTest">{{sessionGet "number"}}</h1>
-<input class="numberTest" type="number" {{bindSession "number"}} >
+  <h1 id="checkboxTest">{{sessionGet "checkbox"}}</h1>
+  <input class="checkboxTest" type="checkbox" {{bindSession "checkbox"}} >
 
-<h1 id="selectTest">{{sessionGet "select"}}</h1>
-<select class="selectTest" {{bindSession "select"}}>
-  <option value="crackers">Crackers</option>
-  <option value="cheese">Cheese</option>
-  <option value="wine">Wine</option>
-  <option value="soda">Soda</option>
-</select>
+  <h1 id="numberTest">{{sessionGet "number"}}</h1>
+  <input class="numberTest" type="number" {{bindSession "number"}} >
+
+  <h1 id="selectTest">{{sessionGet "select"}}</h1>
+  <select class="selectTest" {{bindSession "select"}}>
+    <option value="crackers">Crackers</option>
+    <option value="cheese">Cheese</option>
+    <option value="wine">Wine</option>
+    <option value="soda">Soda</option>
+  </select>
+</div>
 </template>
