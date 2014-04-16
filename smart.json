@@ -3,7 +3,7 @@
   "description": "session-bind - two way data bindings between session variables and handlebars template html forms. Useful for reactive UI forms, eg. number of results.",
   "homepage": "https://github.com/nikhilbobb/Meteor-session-bind",
   "author": "nikhil bobb <nikhilb at ml1.net> (http://n79.org)",
-  "version": "0.0.5.1",
+  "version": "0.0.5.2",
   "git": "https://github.com/nikhilbobb/Meteor-session-bind.git",
   "packages": {}
 }
