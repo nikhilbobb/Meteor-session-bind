@@ -3,12 +3,13 @@ Meteor-session-bind
 
 Two way data bindings between Meteor session variables and handlebars template html forms. 
 
+Updated for Meteor 1.0!
+
 #### Install
 
 ```
-mrt add session-bind 
+meteor add nikhizzle:session-bind 
 ```
-*Requires [Meteorite](https://github.com/oortcloud/meteorite)*
 
 ## Basic Usage
 In your javascript just add the following to the target template:

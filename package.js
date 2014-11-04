@@ -1,7 +1,7 @@
 Package.describe({
   name: 'nikhizzle:session-bind',
   summary: "session-bind - two way data bindings between session variables and handlebars template html forms.",
-  version: '1.0.0',
+  version: '1.0.1',
   git: "https://github.com/nikhilbobb/Meteor-session-bind"
 });
 
