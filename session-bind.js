@@ -17,6 +17,7 @@ sessionBind = function(template) {
         if (iObj == undefined) {
           var value = undefined;
           iObj = {};
+          Session.set(obj, iObj);
         } else {
           var value = iObj[name];
         }
@@ -40,6 +41,7 @@ sessionBind = function(template) {
         if (iObj == undefined) {
           Session.set(name, value);
         } else {
+          iObj = Session.get(obj);
           iObj[name] = value;
           Session.set(obj, iObj);
         }
